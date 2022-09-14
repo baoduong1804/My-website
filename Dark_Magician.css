@@ -1,3 +1,4 @@
+
 *
 {
     margin:0;
@@ -12,12 +13,23 @@ body
     background: none;
     min-height: 100vh;
 }
+.container
+{
+    position: relative;
+    height: 450px;
+    width: 300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:none;
+}
 .card
 {
     height: 450px;
     width: 300px;
     background: rgba(179, 127, 31, 0.651);
     border:10px solid black;
+   
 }
 .name
 {
@@ -40,12 +52,12 @@ body
     border-radius: 50%;
     font-size:1.4em;
     background: white;
+    box-shadow: 0 0 5px black;
 }
 .sao
 {
     margin-left:105px;
     color:yellow;
-   
 }
 .sao img
 {
@@ -61,7 +73,7 @@ body
     background: rgb(245, 86, 12);
     box-shadow: 2px 2px 4px black,
     inset 2px 2px 2px rgba(0, 0, 0, 0.471);
-    transition: 3s;
+    transition: 1s;
 }
 .sao ion-icon:hover, .name ion-icon:hover
 {
@@ -70,6 +82,7 @@ body
 }
 .card_img
 {
+    position: relative;
     height: 230px;
     width: 230px;
     background:grey;
@@ -80,7 +93,13 @@ body
 img
 {
     height: 100%;
-    width: 100%;
+    width: 100%;  
+}
+.khong_nen
+{
+    position: absolute;
+    top:0;
+    left:0;
 }
 .card_in4
 {
@@ -99,7 +118,7 @@ img
 }
 .card_in4 p
 {
-    font-size: 10px;
+    font-size: 12px;
     font-style: italic;
 }
 .line
@@ -112,10 +131,70 @@ img
     top:86px;
     left:4px;
 }
-.thongso h3
+.thongso 
 {
     position:absolute;
-    top:87px;
-    left:125px;
-    font-size: 14px;
+    display: flex;
+    text-align: center;
+    font-style: unset;
+    font-weight: 900;
+    font-size: 16px;
+    top:405px;
+    left:130px;
+}
+.container:hover .thongso p
+{
+    position: fixed;
+    color: red;
+    font-size: 1.8em;
+    transform:translateY(-40px) translateX(-120px)  ;
+    transition: 2.7s;
+    word-spacing: 100px;
+}
+.container:hover .card
+{
+    transform:skewX(40deg) rotateX(60deg);
+    transition: 2s;
+    box-shadow: unset;
+    box-shadow: 0 0 10px black,
+    -20px 55px 40px black;
+}
+.anh
+{
+    position: relative;
+    top:-145px;
+    left:-255px;
+}
+.anh img
+{
+    width: 220px;
+    height: 220px;
+}
+.container:hover .anh img
+{
+    width: 370px;
+    height: 370px;
+    transform:translateY(-220px) translateX(-70px) ;
+    transition: 3s;
+}
+.anh::after
+{
+    content:'';
+    position:absolute;
+    top: 160px;
+    left:50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 100%;
+    z-index: 100;
+    filter:blur(13px);
+}
+.container:hover .anh::after
+{
+    background:black;
+    transition: 2.8s;
+}
+.card,.thongso p,.anh img,.anh::after 
+{
+    transition: 2s;
 }
