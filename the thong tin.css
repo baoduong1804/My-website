@@ -2,7 +2,7 @@
 {
     margin: 0px 7px ;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;/*width,height thiết lập = content+padding+border+margin*/
 }
 body
 {
