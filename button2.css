@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: #9e54bd;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 70px;
+    background: #823aa0;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px black,
+    2px 3px 0px #35033f;
+}
+.button{
+    transition: 0.5s;
+}
+.button button{
+    border: none;
+    background: none;
+    font-size: 1em;
+    color:white;
+    margin-top:100px;
+    margin-bottom: 70px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px black;
+}
+.button ion-icon{
+    margin: 0px auto;
+    display: block;
+    font-size: 2em;
+    color: white;
+    filter:drop-shadow(3px 3px 1px black);
+}
+.container:hover .button{
+    
+    transform: translateY(-90px);
+    transition: 0.5s;
+    
+}
