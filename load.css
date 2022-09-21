@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background: black;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    
+}
+
+.drop ion-icon{
+    color:white;
+    animation: fly2 1.5s linear infinite;
+    filter:drop-shadow(0 0 20px rgb(208, 255, 1))
+}
+.drop{
+    position:absolute;
+    font-size: 4.5em;
+    top:-20px;
+    left:-20px;
+    animation: fly 12s linear infinite;
+}
+@keyframes fly {
+    0%{
+        transform:translate(0,0);
+    }
+    25%{
+        transform:translate(300px,0);
+    }
+    50%{
+        transform:translate(300px,300px);
+    }
+    75%{
+        transform:translate(0,300px);
+    }
+    100%{
+        transform:translate(0,0);
+    }
+}
+/*@keyframes fly2 {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

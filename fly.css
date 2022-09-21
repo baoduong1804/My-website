@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.circle{
+    position:relative;
+    width: 300px;
+    height: 300px;
+    border:1px solid black;
+    border-radius:50%;
+    animation:fly 8s linear infinite;
+}
+ion-icon{
+    position:absolute;
+    font-size: 2.5em;
+    left:280px;
+    top:140px;
+    transform:rotate(90deg);
+}
+
+.circle2 ion-icon{
+    left:-20px;
+}
+.circle2{
+    animation:fly2 8s linear infinite;
+}
+@keyframes fly {
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    49.9999999%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+    50%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(720deg);
+        opacity:0;
+    }
+}
+@keyframes fly2 {
+    0%{
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(-360deg);
+        opacity:0;
+    }
+    50.0000001%{
+        transform: rotate(-360deg);
+        opacity:1;
+    }
+    100%{
+        transform: rotate(-720deg);
+    }
+}
