@@ -1,0 +1,115 @@
+*
+{
+    margin: 0px 7px ;
+    padding: 0;
+    box-sizing: border-box;/*width,height thiết lập = content+padding+border+margin*/
+}
+body
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+}
+.container
+{
+    position:relative;
+    height:400px;
+    width:300px;
+    background: rgb(23, 23, 22);
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.75);
+    border-left: 1.5px solid rgba(255, 255, 255, 0.75); 
+    border-right: 0.3px solid rgba(255, 255, 255, 0.75);
+    border-bottom: 0.3px solid rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 5px white, 0 0 0 3px black, 10px 10px 15px black; 
+}
+h2
+{
+    position: absolute;
+    top:170px;
+    color:white;
+    gap:2px;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+h2:hover
+{
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.53);
+}
+.drop
+{
+    position:absolute;
+    height:130px;
+    width:130px;
+    top:22px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 50%;
+    border: 3px solid red;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.291);
+}
+img
+{
+    height:100%;
+    width:100%;
+    margin: 0;
+}
+.contact
+{
+    position:absolute;
+    height:30px;
+    width:120px;
+    top:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: transparent;
+    border: 1px solid red;
+    border-radius: 7px;
+    color:white;
+    transition:0.5s;
+    box-shadow: 0 0 5px red;
+}
+.contact:hover
+{
+    background: red;
+}
+.drop:hover
+{
+    top:0;
+    margin: 0;
+    height:100%;
+    width:100%;
+    border-radius: unset;
+    transition:0.5s;
+    border:none;
+    border-radius: 20px;
+    z-index: 1;
+}
+.icon 
+{
+    position:absolute;
+    display:flex;
+    top:185px;
+    list-style-type: none;
+    margin: 20px 20px;
+    padding:  20px 20px;
+    color:rgb(0, 200, 255);
+}
+a
+{
+    color:aqua;
+    transition: 0.5s;
+    font-size: 1.2em;
+}
+a:hover
+{
+    color:red;
+    font-size: 2em;
+}
